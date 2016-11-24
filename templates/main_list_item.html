@@ -1,0 +1,16 @@
+{% load static %}
+<div class="row service">
+    <div class="col-md-2 avatar-likes">
+        <img src="{% static '/img/sun.jpg' %}" class="img-thumbnail" width="90px">
+    </div>
+        <div class="col-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><a href="/service/{{ id }}">{{ title }}</a></h2>
+                    <p>{{ body }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

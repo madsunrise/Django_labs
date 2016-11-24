@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-
-<img src="/static/sun.jpg">
-
-{% include "service.html" %}
+{% block content %}
+    {% for service in services %}
+        {% include "main_list_item.html" with title=service.title id=service.id body=service.body %}
+    {% endfor %}
+{% endblock %}
 
 
 
